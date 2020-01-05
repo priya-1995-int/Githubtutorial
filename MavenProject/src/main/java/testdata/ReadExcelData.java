@@ -13,7 +13,7 @@ public class ReadExcelData {
 	XSSFSheet sheet;
 	public ReadExcelData(String filename,String sheetname) throws IOException
 	{
-		FileInputStream file =new FileInputStream(new File("C:\\Users\\naveen.s\\eclipse-workspace\\pom-framework\\src\\testdata\\"+filename+".xlsx"));
+		FileInputStream file =new FileInputStream(new File("C:\\Users\\priyachittu\\git\\Githubtutorial\\MavenProject\\src\\main\\java\\testdata"+filename+".xlsx"));
 		
 		wb =new XSSFWorkbook(file);
 		sheet=wb.getSheet(sheetname);
